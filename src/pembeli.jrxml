@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="742f9527-725e-4658-a6dd-243e96032de5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * From pembeli]]>
+	</queryString>
+	<field name="id_pembeli" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pembeli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_hp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="387c9409-1238-4f49-a322-c5abafa65ca9" mode="Opaque" x="-20" y="-21" width="595" height="92" backcolor="#FF9999"/>
+				<staticText>
+					<reportElement uuid="1323a60e-ad2d-4d05-8447-c7f455ccc6ad" x="20" y="20" width="375" height="43" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center">
+						<font fontName="Times New Roman" size="36" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Laporan Data Pembeli]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement uuid="1323a60e-ad2d-4d05-8447-c7f455ccc6ad" x="418" y="42" width="137" height="27" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Book Store Andini]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement uuid="ae3c0a03-cd0c-4319-bfbb-64160d1fe271" x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+			</line>
+			<staticText>
+				<reportElement uuid="bc4d09cf-eba0-41fc-839a-4115afd0e5c9" mode="Opaque" x="0" y="0" width="111" height="20" forecolor="#FF6666" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Id Pembeli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3f511815-a0f7-4e83-9a08-699fd4ef16b6" mode="Opaque" x="111" y="0" width="111" height="20" forecolor="#FF6666" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Pembeli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ce86331-6a9a-4c0e-ac00-eb3d705bf952" mode="Opaque" x="222" y="0" width="111" height="20" forecolor="#FF6666" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="188264ac-fe98-4601-aa12-4d90e66e0394" mode="Opaque" x="333" y="0" width="111" height="20" forecolor="#FF6666" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Hp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e953c698-009d-4d48-9a34-8918b549d7dc" mode="Opaque" x="444" y="0" width="111" height="20" forecolor="#FF6666" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement uuid="80e7c08e-4628-4591-ae82-5d32c233307a" positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="33635ef0-db2e-49a3-a409-5dd1981c8b3f" x="0" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_pembeli}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="e9b4378d-5192-4118-9164-ec008f646bdc" x="111" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_pembeli}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="1d2ecdb8-62b8-4350-a1e9-f97aa2da9824" x="222" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="96a872aa-fe02-4b58-97b2-33598daf9fbc" x="333" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_hp}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="f1a762bf-1c49-4d92-8b97-4f046a9e8f9f" x="444" y="0" width="111" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement uuid="c2f4557d-145a-4f27-bc1b-80cb9d4c2114" mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="264aa6a4-8593-4e58-953d-9eb22067aa2b" mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="2237da99-dc4a-4133-9a4a-8fd838bf9e49" x="0" y="4" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
